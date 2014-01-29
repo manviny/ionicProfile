@@ -12,3 +12,28 @@ angular.module('patrimonio24App')
        $scope.data = "you";
        
     });
+
+angular.module('patrimonio24App')
+  .controller('HomeTabCtrl', function ($scope) { 
+        
+  $scope.myTitle = 'Page One';
+
+  $scope.leftButtons = [
+    { 
+      type: 'button-positive',
+      content: '<i class="icon ion-navicon"></i>',
+      tap: function(e) {
+      	alert("hi")
+      }
+    }
+  ];
+  $scope.rightButtons = [
+    { 
+      type: 'button-clear',
+      content: 'Edit',
+      tap: function(e) {
+      }
+    }
+  ]
+       
+    });  
