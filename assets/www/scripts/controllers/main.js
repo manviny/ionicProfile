@@ -14,7 +14,7 @@ angular.module('patrimonio24App')
     });
 
 angular.module('patrimonio24App')
-  .controller('HomeTabCtrl', function ($scope) { 
+  .controller('HomeTabCtrl', function ($scope, $routeParams) { 
         
   $scope.myTitle = 'Page One';
 
@@ -23,7 +23,8 @@ angular.module('patrimonio24App')
       type: 'button-positive',
       content: '<i class="icon ion-navicon"></i>',
       tap: function(e) {
-      	alert("hi")
+        console.log(e);
+      	alert($routeParams.municipio)
       }
     }
   ];

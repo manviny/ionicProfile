@@ -1,0 +1,31 @@
+
+<view title="'Home'" left-buttons="leftButtons" right-buttons="rightButtons">
+    <side-menus>
+      <!-- Center content -->
+      <pane side-menu-content>
+          <content has-header="true" padding="true">
+              <p>Example of Ionic tabs. Navigate to each tab, and
+              navigate to child views of each tab and notice how
+              each tab has its own navigation history.</p>
+              <p>
+                <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts{{data}}</a>
+              </p>
+              <ul>
+                <li ng-repeat="item in lista">
+                  {{item.name}}
+                </li>
+              </ul>
+            </content>              
+      </pane>
+
+      <!-- Left menu -->
+      <side-menu side="left"><br><br><br><br><br><br>left
+      </side-menu>
+
+      <!-- Right menu -->
+      <side-menu side="right"><br><br><br><br><br><br>right
+      </side-menu>
+    </side-menus>
+
+
+</view>
