@@ -30,6 +30,17 @@ angular.module('patrimonio24App',[
         }
       }
     })
+    .state('tabs.facts.item', {
+      url: "/:item",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/facts.item.html"
+        }
+      },
+      controller: function($scope, $stateParams){
+        $scope.item = $stateParams.item;
+      }
+    })    
     .state('tabs.facts2', {
       url: "/facts2",
       views: {
