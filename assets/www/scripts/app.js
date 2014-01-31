@@ -11,13 +11,13 @@ angular.module('patrimonio24App',[
     .state('tabs', {
       url: "/tab",
       abstract: true,
-      templateUrl: "tabs.html"
+      templateUrl: "templates/tabs.html"
     })
     .state('tabs.home', {
       url: "/home",
       views: {
         'home-tab': {
-          templateUrl: "home.html",
+          templateUrl: "templates/home.html",
           controller: 'HomeTabCtrl'
         }
       }
@@ -26,7 +26,7 @@ angular.module('patrimonio24App',[
       url: "/facts",
       views: {
         'home-tab': {
-          templateUrl: "facts.html"
+          templateUrl: "templates/facts.html"
         }
       }
     })
@@ -34,7 +34,7 @@ angular.module('patrimonio24App',[
       url: "/facts2",
       views: {
         'home-tab': {
-          templateUrl: "facts2.html"
+          templateUrl: "templates/facts2.html"
         }
       }
     })
@@ -42,7 +42,7 @@ angular.module('patrimonio24App',[
       url: "/about",
       views: {
         'about-tab': {
-          templateUrl: "about.html"
+          templateUrl: "templates/about.html"
         }
       }
     })
@@ -50,7 +50,7 @@ angular.module('patrimonio24App',[
       url: "/navstack",
       views: {
         'about-tab': {
-          templateUrl: "nav-stack.html"
+          templateUrl: "templates/nav-stack.html"
         }
       }
     })
@@ -58,7 +58,7 @@ angular.module('patrimonio24App',[
       url: "/contact",
       views: {
         'contact-tab': {
-          templateUrl: "contact.html"
+          templateUrl: "templates/contact.html"
         }
       }
     });
@@ -68,6 +68,3 @@ angular.module('patrimonio24App',[
 
 })
 
-.controller('HomeTabCtrl', function($scope) {
-  console.log('HomeTabCtrl');
-});
